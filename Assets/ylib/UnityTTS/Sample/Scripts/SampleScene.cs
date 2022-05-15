@@ -23,6 +23,8 @@ namespace ylib.Services
 
         public void Start()
         {
+            ylib.Services.UnityTTS.Init();
+
             btnPlay.onClick.AddListener(() =>
             {
                 ylib.Services.UnityTTS.Speech(inptText.text);
